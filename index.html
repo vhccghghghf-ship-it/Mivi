@@ -1,26 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <title>My Video Platform</title>
+    <title>আমার ভিডিও প্ল্যাটফর্ম</title>
     <style>
-        body { font-family: sans-serif; background: #111; color: white; padding: 20px; text-align: center; }
-        input { padding: 10px; width: 80%; max-width: 400px; }
-        .video-card { margin-top: 20px; background: #222; padding: 15px; border-radius: 8px; }
-        video { width: 100%; max-width: 600px; margin-top: 10px; }
+        body { font-family: sans-serif; background: #111; color: white; text-align: center; padding: 20px; }
+        input { padding: 10px; width: 80%; max-width: 400px; border-radius: 5px; border: none; margin-bottom: 20px; }
+        .video-card { margin-top: 20px; background: #222; padding: 15px; border-radius: 8px; display: inline-block; width: 100%; max-width: 600px; }
+        .thumbnail { width: 100%; max-height: 350px; object-fit: cover; border-radius: 5px; margin-bottom: 10px; }
+        video { width: 100%; max-width: 600px; margin-top: 10px; border-radius: 5px; }
     </style>
 </head>
 <body>
-
     <h1>আমার ভিডিও প্ল্যাটফর্ম</h1>
-    <input type="text" id="search" placeholder="ভিডিওর নাম দিয়ে খুঁজুন...">
+    <input type="text" id="search" placeholder="ভিডিও নাম দিয়ে খুঁজুন...">
 
-    <div class="video-card" data-title="My Video">
-        <h3>ভিডিওর নাম</h3>
+    <div class="video-card" data-title="The Remarriage Empress">
+        <h3>The Remarriage Empress</h3>
+        <!-- থাম্বনেইল ছবি -->
+        <img src="3351.jpg" alt="থাম্বনেইল" class="thumbnail">
+        
+        <!-- ভিডিও প্লেয়ার -->
         <video controls>
-            <source src="আপনার_ভিডিওর_লিংক_এখানে_দিন" type="video/mp4">
+            <source src="https://docs.google.com/uc?export=download&id=1Hxf4k0qp8cXjvruwzsCeIyfyLUM9TdH0" type="video/mp4">
+            আপনার ব্রাউজার ভিডিও ট্যাগ সমর্থন করে না।
         </video>
     </div>
-
 </body>
 </html>
